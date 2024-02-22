@@ -36,6 +36,11 @@
     font-size: 1rem;
     color: white;
 }
+.secondary-para{
+    color: rgb(68, 67, 67);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
 
 
 /* banner styles */
@@ -65,6 +70,7 @@ header {
 }
 /* banner styles end */
 
+
 /* failure styles */
 .failure{
     display: grid;
@@ -73,17 +79,19 @@ header {
     align-items: center;
     gap: 70px;
 }
-.failure .failure-img{
-    /* max-width: 420px;
-    margin: 0 auto; */
+/* .failure .failure-img{
+    max-width: 420px;
+    margin: 0 auto;
     height: 750px;
-}
+    background-color: aqua;
+} */
 .failure .failure-img img{
     width: 100%;
 }
 .failure .failure-content{
     max-width: 420px;
     margin: 0 auto;
+    /* background-color: aqua; */
 }
 .failure .failure-content h2{
     margin-bottom: 20px;
@@ -98,6 +106,41 @@ header {
 .failure .failure-content ul li i{
     color: blueviolet;
 }
+/* failure styles end */
+
+
+/* plans styles */
+.plan-head{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.plan-list{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 70px;
+}
+.plan-list .plan-items{
+    text-align: center;
+    /* border: 1px solid red; */
+    /* background-color: aqua; */
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+.plan-list .plan-items *{
+    margin-bottom: 16px;
+}
+/* plans styles end */
+
+
+
+
+
+
+
+
+
+
 
 
 /* media query */
@@ -134,6 +177,12 @@ header {
     /* failure styles */
     .failure{
         grid-template-columns: repeat(1 , 1fr);
-        gap: 0;
+        gap: 20;
+    }
+    /* failure styles end */
+
+    /* plan styles */
+    .plan-list{
+        grid-template-columns: repeat(1 , 1fr);
     }
 }
