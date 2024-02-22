@@ -13,11 +13,11 @@
 }
 
 .btn-primary {
-    padding: 1.25rem;
+    padding: 15px 20px;
     border: none;
-    border-radius: 20%;
+    border-radius: 15%;
     background-color: white;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1rem;
 }
 .btn-primary:hover{
@@ -133,6 +133,55 @@ header {
 /* plans styles end */
 
 
+/* positive mindset styles */
+.positive-mindset{
+    background-image: linear-gradient(90.00deg, rgb(0, 95, 172),rgba(0, 95, 172, 0) 100%), url('../images/watch.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.mindset{
+    max-width: 450px;
+    padding: 50px;
+}
+.mindset *{
+    margin-bottom: 20px;
+}
+/* positive mindset styles end */
+
+
+/* footer styles */
+#footer-container{
+    margin-bottom: 0;
+}
+.footer-box{
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 300px;
+}
+.footer-box .left .icon{
+    display: flex;
+    gap: 10px;
+}
+.footer-box .box *{
+    margin-bottom: 20px;
+}
+.footer-box .right input{
+    display: block;
+    font-weight: 500;
+    padding: 20px 150px 20px 20px ;
+    border-radius: 10%;
+    color: red;
+}
+.footer-box .right input:hover{
+    background-color: black;
+}
+.footer-box .right button:hover{
+    background-color: red;
+}
+
+
 
 
 
@@ -168,11 +217,13 @@ header {
     /* .primary-paragraph {
         font-size: 0.5rem;
     } */
-    .btn-primary{
+    /* .btn-primary{
         font-size: 0.5rem;
         padding: 0.75rem;
-    }
+    } */
     /* banner styles end */
+
+
 
     /* failure styles */
     .failure{
@@ -181,8 +232,21 @@ header {
     }
     /* failure styles end */
 
+
+
     /* plan styles */
     .plan-list{
         grid-template-columns: repeat(1 , 1fr);
     }
+    /* plan styles end */
+
+
+
+    /* footer style*/
+    .footer-box{
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 50px;
+        padding: 20px;
+    }
+    /* footer styles end */
 }
