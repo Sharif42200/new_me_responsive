@@ -1,0 +1,84 @@
+/* shared styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+.container{
+    max-width: 1140px;
+    width: 75%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+.primary-paragraph{
+    font-weight: 400;
+    /* font-size: 1em; */
+    font-size: 1vw;
+    color: white;
+}
+.btn-primary{
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 1vw;
+}
+
+/* banner styles */
+
+.header {
+    /* min-height: 100%; */
+    background-image: url('../images/banner/banner3.png');
+    background-size: cover;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    /* width: 100vw; */
+}
+.banner{
+    max-width: 400px;
+    width: 75%;
+    margin: 0 auto;
+    padding: 200px 150px 200px 600px;
+    /* padding: 150px 150px 150px 600px; */
+    
+}
+.banner .banner-box{
+    text-align: end;
+    
+}
+.banner .banner-box *{
+    margin-bottom: 20px;
+}
+.banner .banner-box h1{
+    font-weight: 700;
+    font-size: 3vw;
+    /* font-size: 3.5rem; */
+    color: white;
+}
+
+/* banner styles end*/
+
+/* responsive */
+@media screen and (max-width: 576px) {
+    .container{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+        padding: 50px;
+    }
+    .banner .banner-box{
+        text-align: center;
+    }
+    .banner .banner-box h1{
+        font-size: 4vw;
+    }
+    .primary-paragraph{
+        font-size: 3vw;
+    }
+    .btn-primary{
+        font-size: 3vw;
+    }
+}
